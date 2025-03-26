@@ -124,9 +124,11 @@ body{
     border: 1px solid #171515;
     
  }
+ 
  .link:hover i{
     color: #fff;
     transform: scale(1.2);
+    
  }
  .link i{
     transition: .2s;
@@ -156,14 +158,20 @@ body{
 
     .link::before{
         content: "";
-        width: 85px;
-        height: 85px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         position: absolute;
         left: -100px;
         top: 100%;
        
         
+    }
+    .link:hover::before{
+        animation: desloca .5s;
+        left: 0px;
+            top: 0px;
+
     }
    
 
