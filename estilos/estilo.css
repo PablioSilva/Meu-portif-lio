@@ -1,0 +1,493 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:#373853;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", serif;
+    padding-bottom: 50px;
+}
+/*inicio container */
+
+
+
+/*aba da logo */
+
+/*fim da aba do logo*/
+
+/*inicio seção bem vindo*/
+.intro{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+   border-radius: 25px;
+}
+.texto{
+    margin-top: 25px;
+
+}
+
+.txt-animado {
+    font-size: 65px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 50px;
+    
+}
+
+.txt-animado span {
+    position: relative;
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+    display: inline-block;
+}
+
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #fff;
+    animation: cursor 0.8s step-end infinite;
+    right: 0;
+    opacity: 1;
+}
+
+@keyframes digita {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Aplica a animação de digitação ao próprio span */
+.txt-animado span {
+    animation: digita 2s steps(20) forwards;
+    animation-delay: 2s; 
+}
+
+
+
+
+
+.alinhamentobemvindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+.btn-contatos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 20px;
+    
+ }
+
+
+ .link{
+    width: 80px;
+    height: 80px;
+    box-shadow: 15px 0 8px rgba(0, 0, 0, 0.405);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 15px;
+    background-color: #DCDCDC;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #171515;
+    
+ }
+ .link:hover i{
+    color: #fff;
+    transform: scale(1.2);
+ }
+ .link i{
+    transition: .2s;
+ }
+
+ .link-1::before{
+    background-color: #25D366;
+ }
+ .link-2::before{
+    background-color: #171515;
+ }
+ .link-3::before{
+    background-color: #0077B5;
+    
+ }
+
+    .link-1{
+        color: #25D366;
+    }
+    .link-2{
+        color: #171515;
+    }
+    .link-3{
+        color: #0077B5
+        
+    }
+
+    .link::before{
+        content: "";
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        position: absolute;
+        left: -100px;
+        top: 100%;
+       
+        
+    }
+   
+
+    @keyframes desloca {
+        0%{
+            left: -100px;
+             top: 100%;
+        }
+        50%{
+            left: 15%;
+            top: -35%;
+        }
+        100% {
+            left: -2px;
+            top: 0 -2px;
+        }
+        
+    }
+
+
+    .conteudo1{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px ;
+        margin-left: 50px;
+        margin-top: -100px;
+        }
+
+
+
+
+        .intro h1{
+           
+            font-size: 50px;
+            font-weight: 300;
+            margin-top: 100px;
+            color: #fff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            margin-left: -350px;
+            
+            
+            }
+
+
+
+        .imagemA{
+            height: 100%;
+            width: 20%;
+            display: flex;
+            }
+
+        .avatar{
+            width: 100%;
+            height: 80%;
+            margin-top: -25px;
+            }
+
+                /*fim aba bem vindo*/
+
+
+               
+
+
+
+
+        .alinhamentoicons{
+            display: flex;
+            width: 100%;
+            margin-top: 200px;
+            
+             }    
+                
+        
+
+        .icons{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            justify-content: center;
+            margin-right: 15px;
+        
+        
+        }
+
+
+        .iconhtml{
+            color:  #E34F26;
+        }
+        .iconcss{
+            color: #1572B6;
+        }
+        .iconjs{
+            color: #F7DF1E;
+        }
+        
+        .iconboot{
+            color: #7952B3;
+        }
+        .icongit{
+            color: #F05032;
+        }
+        .iconhub{
+            color: #181717;
+        }
+        .skill{
+            font-size: 60px;
+            margin: 20px;
+            transition: 2s;
+            width: 45px;
+            display: flex;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+        .skill:hover{
+            transform: rotateY(360deg);
+        }
+     
+
+
+        
+
+
+
+        /*fim da aba skills*/
+
+
+
+
+
+
+
+
+
+.abaprojetos{
+    width: 100%;
+    height: 700px;
+    background-color: #32334a;
+    padding-top: 50px;
+    border-radius: 25px;
+}
+
+.titulo{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+  .projetos{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 400px));
+    grid-template-rows: 45% 45%;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .item{
+    
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.503);
+    transition: 0.5s;
+    border-radius: 10px;
+    
+
+    }
+
+    .item:hover{
+        scale: 1.05;
+    }
+
+    .imagensProjeto{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+
+    }
+      
+
+/*fim aba projetos*/
+
+
+/*inicio aba sobre mim*/ 
+
+ 
+.AbaSobreMim{
+    
+    width: 100%;
+    height: 00px;
+    
+    
+}
+
+.AbaSobreMim h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+
+    
+
+}
+.sobreMim{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.ParagrafoSobreMim{
+    
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+}
+.abaAvatar{
+    width: 15%;
+    
+    }
+.avatar2{
+    width: 80%;
+    height: auto;
+    margin-right: 15px;
+    
+}
+
+
+/*fim aba sobre mim*/
+
+
+     
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+   
+    
+  @media (max-width: 900px) {
+    .avatar {
+      width: 100%; 
+      height: 70%;
+      margin-top: 40px;
+    }
+    .intro{
+        height: 300px;
+    }
+    .intro h1{
+        font-size: 25px;
+    }
+    .abaprojetos h1{
+        font-size: 30px;
+    }
+    .projetos{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(80px, 150px));
+        grid-template-rows: 45% 45%;
+        height: 250px;
+        gap: 15px;
+        margin-top: 150px;
+    }
+    
+    .avatar2{
+        width: 100px;
+    }
+    
+    .link{
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 20px;
+        margin-top: -10px;
+        
+    }
+    .botoes{
+        margin-top:-40px;
+        font-size: 15px;
+    }
+
+    .ParagrafoSobreMim{
+        font-size: 12px;
+        margin-top: 50px;
+    }
+    .txt-animado{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .titulo{
+    position: relative;
+    top: 50px;
+    }
+    .alinhamentoicons{
+       
+        position: relative;
+        top: -120px;
+    }
+    .skill{
+        font-size: 40px;
+    }
+    .btn-contatos{
+        margin-top: 80px;
+
+    }
+    .link::before{
+         width: 70px;
+        height: 70px;
+       
+       }
+       .link:hover::before{
+        animation: desloca .5s;
+        left: -11px;
+            top: -5px;
+
+    }
+  }
