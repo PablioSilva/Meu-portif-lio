@@ -16,7 +16,12 @@ body{
 }
 /*inicio container */
 
-
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 /*aba da logo */
 
@@ -39,7 +44,7 @@ body{
     font-size: 65px;
     font-weight: 300;
     color: #fff;
-    padding-left: 50px;
+    padding-left: 0px;
     
 }
 
@@ -91,7 +96,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    
 }
 
 
@@ -224,6 +230,7 @@ body{
             height: 100%;
             width: 20%;
             display: flex;
+            
             }
 
         .avatar{
@@ -312,10 +319,11 @@ body{
 
 .abaprojetos{
     width: 100%;
-    height: 700px;
+    height: 100%;
     background-color: #32334a;
     padding-top: 50px;
     border-radius: 25px;
+    
 }
 
 .titulo{
@@ -419,10 +427,78 @@ body{
     opacity: 1;
     transform: translateY(0);
   }
-  
+ 
+
+  @media (max-width:660px){
+    .intro{
+        height: 100px;
+        margin-top: 90px;
+    }
+    .intro h1{
+        font-size: 20px;
+        margin-left: -60px;
+    }
+    .txt-animado{
+        font-size: 20px;
+    }
+    .abaprojetos{
+       top: 300px;
+        height: 350px;
+        position: absolute;
+
+    
+    }
+    .abaprojetos h1{
+        font-size: 20px;
+        margin-top: -20px;
+        
+    }
+    .projetos{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(80px, 150px));
+        height: 200px;
+        gap: 10px;
+        margin-top: 70px;
+    }
+    .avatar{
+        width: 100%;
+        height: 100%;
+    }
+    .alinhamentoicons{
+        margin-left: 50px;
+        
+    }
+    .skill{
+        font-size: 15px;
+        margin: -80px 10px 0 ;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .AbaSobreMim{
+        top: 480px;
+        position: relative;
+    }
+    .AbaSobreMim h1{
+        font-size: 20px;
+    }
+    .ParagrafoSobreMim{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    .link{
+        width: 30px;
+        height: 30px;
+    }
+    .link i{
+        font-size: 10px;
+    }
+
+
+  }
    
     
-  @media (max-width: 900px) {
+  @media (min-width: 661px) and (max-width: 900px){
     .avatar {
       width: 100%; 
       height: 70%;
@@ -436,6 +512,12 @@ body{
     }
     .abaprojetos h1{
         font-size: 30px;
+        height: auto;
+        margin-top: -20px;
+    }
+    .abaprojetos{
+        padding-top: 0;
+
     }
     .projetos{
         display: grid;
@@ -443,7 +525,8 @@ body{
         grid-template-rows: 45% 45%;
         height: 250px;
         gap: 15px;
-        margin-top: 150px;
+        margin-top: 100px;
+        margin-bottom: 30px;
     }
     
     .avatar2{
@@ -470,6 +553,7 @@ body{
     .txt-animado{
         font-size: 40px;
         margin-top: 40px;
+       
     }
     .titulo{
     position: relative;
@@ -482,6 +566,7 @@ body{
     }
     .skill{
         font-size: 40px;
+        margin: 15px;
     }
     .btn-contatos{
         margin-top: 80px;
