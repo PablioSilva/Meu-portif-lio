@@ -435,11 +435,11 @@ body{
         margin-top: 90px;
     }
     .intro h1{
-        font-size: 20px;
+        font-size: 15px;
         margin-left: -60px;
     }
     .txt-animado{
-        font-size: 20px;
+        font-size: 15px;
     }
     .abaprojetos{
        top: 300px;
@@ -455,7 +455,7 @@ body{
     }
     .projetos{
         display: grid;
-        grid-template-columns: repeat(2, minmax(80px, 150px));
+        grid-template-columns: repeat(2, minmax(80px, 120px));
         height: 200px;
         gap: 10px;
         margin-top: 70px;
@@ -469,8 +469,8 @@ body{
         
     }
     .skill{
-        font-size: 15px;
-        margin: -80px 10px 0 ;
+        font-size: 25px;
+        margin: -150px 10px 0 ;
     }
     .titulo{
         font-size: 20px;
