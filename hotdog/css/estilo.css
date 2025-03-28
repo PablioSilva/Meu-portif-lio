@@ -8,7 +8,8 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family:  sans-serif;
+    font-family:  'Poppins',sans-serif;
+    background-color: #f6f6f9;
 
 }
 /*inicio cabecalho*/
@@ -23,13 +24,15 @@ header{
     width: 100%;
     height: 250px;
 }
-
+h2{
+    color: rgba(0, 0, 0, 0.671);
+}
 .cabecalho{
     display: flex;
     margin-top: 300px;
     z-index: 1000;
     border-radius: 15px;
-    width: 65%;
+    width: 80%;
     height: 150px;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.336);
@@ -60,7 +63,7 @@ header{
     border-top: 1px solid #ddd;
     border-right: 1px solid#ddd;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     height: 30px;
     padding-top: 5px;
 
@@ -69,7 +72,7 @@ header{
     text-align: center;
     border-top: 1px solid #ddd;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     height: 30px;
     padding-top: 5px;
 
@@ -82,10 +85,10 @@ header{
     margin-top: 5px;
     font-weight: 800;
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .container{
-    width: 65%;
+    width: 80%;
     height: auto;
     margin-top: 150px;
     display: flex;
@@ -100,8 +103,19 @@ header{
     height: 350px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
     border-radius: 10px;
+    
+    
 }
 
+.alinhamento-btn-carrinho{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
 .carrinho{
     display: flex;
     margin-left: 15px;
@@ -109,7 +123,7 @@ header{
     border-bottom: 1px solid #ddd;
     height: 40px;
     width: 90%;
-    font-size: 25px;
+    font-size: 15px;
    
 }
 
@@ -137,11 +151,9 @@ border-radius: 20px;
 align-items: center;
 color: #fff;
 background-color: rgb(189, 23, 23);
-font-size: 20px;
+font-size: 15px;
 font-weight: 800;
 width: 90%;
-margin-top: 150px;
-margin-left: 20px;
 
 transition: 1s;
 
@@ -157,7 +169,7 @@ transition: 1s;
     margin-left: 10px;
 }
 .container1{
-    width: 65%;
+    width: 80%;
     height: auto;
     margin-top: 40px;
     display: flex;
@@ -227,7 +239,7 @@ input::placeholder{
 }
 
 .imagemcoluna{    
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     width: 100%;
     height: 180px;
 
@@ -242,6 +254,7 @@ input::placeholder{
 h4{
     text-align: center;
     margin-top: 10px;
+    font-size: 15px;
 }
 .preco{
     display: flex;
@@ -259,7 +272,7 @@ h4{
 }
 .descricao{
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 10px;
 }
 .precocor1{
@@ -283,6 +296,7 @@ h5{
     height: 100px;
     border-radius: 25px;
     margin-top: 15px;
+    margin-left: 5px;
 }
 
 .cardapio{
@@ -324,4 +338,164 @@ h2{
 .descricaoRefrigerante{
     width: 80%;
     font-size: 20px;
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+
+
+    .colunas{
+    width: 180px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.315);
+    height: 370px;
+    border-radius: 15px;
+    transition: 1s;
+}
+.descricao{
+    font-size: 12px;
+}
+h3{
+    font-size: 15px;
+}
+.cardapio{
+    
+    grid-template-columns: repeat(2, 250px);
+    
+}
+}
+
+@media (min-width: 426px) and (max-width:768px) {
+
+
+    .colunas{
+    width: 130px;
+    height: 300px;
+   
+}
+
+.imagemcoluna{    
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 100px;
+
+}
+.descricao{
+    font-size: 10px;
+}
+h3{
+    font-size: 10px;
+}
+h2{
+    font-size: 20px;
+}
+.cardapio{
+    
+    grid-template-columns: repeat(2, 200px);
+    
+}
+.imagemCardapio{
+    width: 60px;
+    height: 60px;
+   
+}
+.imagembebidas{
+    height: 60px;
+    
+
+}
+.precocor{
+    font-size: 10px;
+}
+.precocor1{
+    font-size: 10px;
+}
+.acessarCarrinho{
+    font-size: 12px;
+}
+.acessarCarrinho p{
+    margin-left: 10%;
+}
+}
+
+@media  (max-width:425px) {
+
+
+    .colunas{
+    width: 70px;
+    height: 200px;
+    margin-left: -28px;
+    
+   
+}
+
+.imagemcoluna{    
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 50px;
+
+}
+.descricao{
+    font-size: 7px;
+    
+}
+h3{
+    font-size: 7px;
+}
+h2{
+    font-size: 15px;
+}
+h4{
+    font-size: 8px;
+}
+.cardapio{
+    
+    grid-template-columns: repeat(1, 200px);
+    
+}
+.imagemCardapio{
+    width: 60px;
+    height: 60px;
+   
+}
+.imagembebidas{
+    height: 60px;
+    
+
+}
+.preco{
+    font-size: 5px;
+    height: 90px;
+}
+.precocor{
+    font-size: 8px;
+    
+}
+.precocor1{
+    font-size: 8px;
+    height: 35px;
+}
+.acessarCarrinho{
+    font-size: 8px;
+    height: 30px;
+}
+.acessarCarrinho p{
+    margin-left: 10%;
+}
+.texto ,.texto1 ,.selecione1, .carrinho{
+    font-size: 8px;
+}
+.total, .subtotal{
+    font-size: 5px;
+}
+.caixaLateral{
+    height: 130px;
+}
+.menuselecao{
+   
+    height: 250px;
+    
+}
+.selecione1, .pesquisa{
+    height: 30px;
+}
+
 }
