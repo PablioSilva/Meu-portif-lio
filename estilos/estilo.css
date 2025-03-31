@@ -11,7 +11,7 @@ body{
     background-color:#373853;
     display: flex;
     justify-content: center;
-    font-family: "Roboto", serif;
+    font-family: "Poppins", serif;
     padding-bottom: 50px;
 }
 /*inicio container */
@@ -21,22 +21,28 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
-/*aba da logo */
-
-/*fim da aba do logo*/
 
 /*inicio seção bem vindo*/
 .intro{
-    width: 100%;
+    width: 90%;
     height: 600px;
     display: flex;
-    justify-content: space-between;
-   border-radius: 25px;
+     border-radius: 25px;
+    background: linear-gradient(#32334a, #373853);
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+    margin-bottom: 50px;
+    margin-top: 50px;
+     
+
 }
 .texto{
     margin-top: 25px;
+
+}
+.titulo1{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -45,7 +51,7 @@ body{
     font-weight: 300;
     color: #fff;
     padding-left: 0px;
-    
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .txt-animado span {
@@ -218,8 +224,8 @@ body{
             font-weight: 300;
             margin-top: 100px;
             color: #fff;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
             margin-left: -350px;
+            font-weight: 300;
             
             
             }
@@ -249,6 +255,9 @@ body{
 
         .alinhamentoicons{
             display: flex;
+            position: relative;
+            bottom: 80px;
+            left: 100px;
             width: 100%;
             margin-top: 200px;
             
@@ -318,12 +327,12 @@ body{
 
 
 .abaprojetos{
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: #32334a;
     padding-top: 50px;
     border-radius: 25px;
-    
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
 }
 
 .titulo{
@@ -344,6 +353,7 @@ body{
     height: 500px;
     gap: 30px;
     margin-top: 40px;
+    margin-bottom: 50px;
   }
 
   .item{
