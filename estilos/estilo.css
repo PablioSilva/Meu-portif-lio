@@ -25,40 +25,60 @@ body{
 }
 
 /*inicio seção bem vindo*/
-.intro{
-    width: 90%;
-    height: 600px;
+.intro {
+    width: 87%;
+    height: 100%;
     display: flex;
-     border-radius: 25px;
-    background: linear-gradient(#32334a, #373853);
+    border-radius: 25px;
+    background: linear-gradient(135deg, rgba(50, 51, 74, 0.9), rgba(55, 56, 83, 0.9));
+    background-size: cover;
+    background-position: center;
     box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
     margin-bottom: 50px;
     margin-top: 50px;
-     
-
+    padding: 20px;
+    color: #fff;
 }
+
 .texto{
     margin-top: 25px;
 
 }
-.titulo1{
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
-}
+
+
 
 .txt-animado {
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 300;
     color: #fff;
     padding-left: 0px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards; 
+    animation-delay: 0.5s; 
 }
 
 .txt-animado span {
     position: relative;
-    white-space: nowrap; /* Evita quebra de linha */
-    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+    white-space: nowrap;
+    overflow: hidden;
     display: inline-block;
+    width: 0; 
+    opacity: 1; 
+    animation: digita 2s steps(20) forwards;
+    animation-delay: 1s; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -204,31 +224,82 @@ body{
     }
 
 
-    .conteudo1{
-        width: 100%;
-        height: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 20px ;
-        margin-left: 50px;
-        margin-top: -100px;
-        }
+    
 
 
+        .space {
+            display: inline-block;
+            width: 15px; /* Ajuste esse valor conforme necessário */
+          }
 
-
-        .intro h1{
-           
-            font-size: 50px;
+        .intro-title {
+            font-size: 80px;
             font-weight: 300;
-            margin-top: 100px;
-            color: #fff;
-            margin-left: -350px;
-            font-weight: 300;
-            
-            
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          }
+          
+          .intro-title span {
+            display: inline-block;
+            opacity: 0;
+            transform: rotateX(90deg);
+            animation: rotateIn 1s forwards;
+            animation-delay: 0.2s;
+          }
+          
+          
+          .intro-title span:nth-child(1) {
+            animation-delay: 0s;
+          }
+          .intro-title span:nth-child(2) {
+            animation-delay: 0.1s;
+          }
+          .intro-title span:nth-child(3) {
+            animation-delay: 0.2s;
+          }
+          .intro-title span:nth-child(4) {
+            animation-delay: 0.3s;
+          }
+          .intro-title span:nth-child(5) {
+            animation-delay: 0.4s;
+          }
+          .intro-title span:nth-child(6) {
+            animation-delay: 0.5s;
+          }
+          .intro-title span:nth-child(7) {
+            animation-delay: 0.6s;
+          }
+          .intro-title span:nth-child(8) {
+            animation-delay: 0.7s;
+          }
+          .intro-title span:nth-child(9) {
+            animation-delay: 0.8s;
+          }
+          .intro-title span:nth-child(10) {
+            animation-delay: 0.9s;
+          }
+          .intro-title span:nth-child(11) {
+            animation-delay: 1s;
+          }
+          .intro-title span:nth-child(12) {
+            animation-delay: 1.1s;
+          }
+          
+          @keyframes rotateIn {
+            0% {
+              opacity: 0;
+              transform: rotateX(90deg);
             }
+            100% {
+              opacity: 1;
+              transform: rotateX(0);
+            }
+          }
+          
 
 
 
@@ -239,11 +310,24 @@ body{
             
             }
 
-        .avatar{
-            width: 100%;
-            height: 80%;
-            margin-top: -25px;
+            .avatar {
+                width: 100%;
+                height: auto;
+                margin-top: -25px;
+                animation: zoomIn 1.5s ease-out forwards;
             }
+            
+            @keyframes zoomIn {
+                0% {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            
 
                 /*fim aba bem vindo*/
 
@@ -257,9 +341,10 @@ body{
             display: flex;
             position: relative;
             bottom: 80px;
-            left: 100px;
             width: 100%;
-            margin-top: 200px;
+            top: 1%;
+            
+            
             
              }    
                 
@@ -297,8 +382,8 @@ body{
             color: #181717;
         }
         .skill{
-            font-size: 60px;
-            margin: 20px;
+            font-size: 40px;
+            margin: 0 20px 0 20px;
             transition: 2s;
             width: 45px;
             display: flex;
@@ -419,6 +504,7 @@ body{
     width: 80%;
     height: auto;
     margin-right: 15px;
+   
     
 }
 
@@ -430,31 +516,39 @@ body{
 .hidden {
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.8s ease-in-out;
-  }
-  
-  .show {
+    transition: all 1s ease-in-out;
+}
+
+.show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
+
  
 
   @media (max-width:660px){
     .intro{
-        height: 100px;
-        margin-top: 90px;
+        height: 200px;
+        margin-top: 70px;
+        width: 80%;
+
     }
-    .intro h1{
-        font-size: 15px;
+    .intro-title{
+        font-size: 20px;
         margin-left: -60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
     }
     .txt-animado{
         font-size: 15px;
+        margin-top: -20px;
     }
     .abaprojetos{
        top: 300px;
         height: 350px;
         position: absolute;
+        margin-top: 20px;
 
     
     }
@@ -471,16 +565,21 @@ body{
         margin-top: 70px;
     }
     .avatar{
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 50%;
+        margin-top: 30px;
     }
     .alinhamentoicons{
-        margin-left: 50px;
+        left: 10px;
+        top: 45%;
+
+        
         
     }
     .skill{
-        font-size: 25px;
+        font-size: 20px;
         margin: -150px 10px 0 ;
+        
     }
     .titulo{
         font-size: 20px;
@@ -515,10 +614,13 @@ body{
       margin-top: 40px;
     }
     .intro{
-        height: 300px;
+        height: 380px;
     }
-    .intro h1{
-        font-size: 25px;
+    .intro-title{
+        font-size: 45px;
+        margin-left: 50px;
+        margin-top: 120px;
+        margin-bottom: 20px;
     }
     .abaprojetos h1{
         font-size: 30px;
@@ -531,7 +633,7 @@ body{
     }
     .projetos{
         display: grid;
-        grid-template-columns: repeat(3, minmax(80px, 150px));
+        grid-template-columns: repeat(3, minmax(80px, 200px));
         grid-template-rows: 45% 45%;
         height: 250px;
         gap: 15px;
@@ -561,7 +663,7 @@ body{
         margin-top: 50px;
     }
     .txt-animado{
-        font-size: 40px;
+        font-size: 20px;
         margin-top: 40px;
        
     }
@@ -571,8 +673,7 @@ body{
     }
     .alinhamentoicons{
        
-        position: relative;
-        top: -120px;
+       left: 20px;
     }
     .skill{
         font-size: 40px;
@@ -593,4 +694,16 @@ body{
             top: -5px;
 
     }
+  }
+  @media (min-width: 901px) and (max-width: 1025px){
+    .projetos{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(80px, 250px));
+        grid-template-rows: 45% 45%;
+        height: 300px;
+        gap: 15px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
   }
