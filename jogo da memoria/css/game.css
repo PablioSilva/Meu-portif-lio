@@ -1,5 +1,5 @@
 
-
+body{background-color: #f6f6f6;}
 main{
     display: flex;
     flex-direction: column;
@@ -132,3 +132,13 @@ button:hover {
     display: none;
   }
   
+@media (max-width: 426px){
+    .grid{
+       gap: 5px; 
+    }
+    .card{
+        margin-bottom: -100px;
+    }
+
+    
+}
