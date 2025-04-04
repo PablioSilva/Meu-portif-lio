@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-family: 'Open sans', sans-serif;
+}
+
+
+.texto{
+   display: flex;
+    height: 300px;
+    width: 100%;
+ border: 1px solid ;
+
+ 
+}
+
+.teste{
+    background-color: antiquewhite;
+    height: 100%;
+    max-width: 640px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.305);
+    border-radius: 10px;
+    margin: 150px auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+form input, forma label, form button{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+form input{
+    font-size: 18px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+form button{
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: blueviolet;
+    border: none;
+    margin-top: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+
+form button:hover{
+
+    background-color: rgba(137, 43, 226, 0.696);
+    color: antiquewhite;
+}
+
+form input:focus {
+    outline: 1px solid blueviolet;
+}
+
+
+.paragrafo-resultado, .bad{
+    background-color: rgb(108, 198, 114);
+    padding-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bad{
+    background-color: rgba(244, 71, 71, 0.778);
+    border-radius: 10px;
+    width: 155px;
+    padding-left: 10px;
+}
+
