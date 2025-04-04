@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <script defer src="../js/game.js"></script>
+    <title>Jogo da Memoria</title>
+</head>
+<body>
+    <main>
+        <section class="main">
+        <img src="../img/titulo.png" class="titulo" alt="">
+    <header>
+        <span class="player"></span>
+        <span>Tempo: <span class="timer">00</span></span> 
+    </header>
+    <div id="endgame-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Parabéns <span id="player-name"></span>!</h2>
+          <p>Seu tempo foi: <span id="final-time"></span></p>
+          <button onclick="restartGame()">Jogar novamente</button>
+        </div>
+      </div>
+      
+        <div class="grid"> </div>
+    </section>
+    
+    </main>
+
+    
+</body>
+</html>
